@@ -2,7 +2,7 @@
 VERSION = 30
 
 # PREFIX for install
-PREFIX = /usr/local
+PREFIX = $(HOME)/.local
 MANPREFIX = $(PREFIX)/share/man
 EGPREFIX = $(PREFIX)/share/doc/nsxiv/examples
 
@@ -19,7 +19,7 @@ HAVE_LIBEXIF  = $(OPT_DEP_DEFAULT)
 HAVE_LIBWEBP  = $(OPT_DEP_DEFAULT)
 
 # Compiler and linker
-CC = c99
+CC = gcc
 # CFLAGS, any optimization flags goes here
 CFLAGS = -Wall -pedantic
 
